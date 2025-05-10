@@ -1,0 +1,37 @@
+{
+  "name": "echo-tasker",
+  "version": "1.0.0",
+  "description": "Automatic tool to keep GitHub repositories active",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "generate": "ts-node script/generate-useless-scss.ts",
+    "cleanup": "ts-node script/cleanup-useless-scss.ts",
+    "branches": "ts-node script/manage-branches.ts",
+    "list-branches": "ts-node script/manage-branches.ts list-branches",
+    "list-tags": "ts-node script/manage-branches.ts list-tags",
+    "branch-cleanup": "ts-node script/manage-branches.ts cleanup",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/Echo-tasker.git"
+  },
+  "keywords": [
+    "github",
+    "automation",
+    "activity"
+  ],
+  "author": "Gorman",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.2",
+    "@types/node": "^18.17.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  }
+} 

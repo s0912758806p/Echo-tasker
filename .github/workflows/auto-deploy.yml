@@ -1,0 +1,88 @@
+name: Echo-Tasker Auto Deploy
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Daily at 00:00 UTC
+    - cron: '0 8 * * *'  # Daily at 08:00 UTC
+    - cron: '0 16 * * *' # Daily at 16:00 UTC
+  workflow_dispatch:     # Allow manual triggers
+
+jobs:
+  auto-deploy:
+    runs-on: ubuntu-latest
+    name: Generate and Commit Changes
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch complete history for accurate merging
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'  # Enable dependency caching
+
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Build TypeScript
+        run: npm run build
+        
+      - name: Generate timestamp for branch and tag
+        id: timestamp
+        run: echo "timestamp=$(date -u '+%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+        
+      - name: Create and checkout new branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          branch_name="auto-update-${{ steps.timestamp.outputs.timestamp }}"
+          git checkout -b $branch_name
+          echo "Created new branch: $branch_name"
+        
+      - name: Generate random SCSS
+        run: npm run generate
+
+      - name: "Optional: Deploy (if required)"
+        run: echo "Deployment step - add your deployment commands here"
+        # Uncomment below to enable actual deployment
+        # run: bash scripts/deploy.sh
+        # Or use rsync for deployment:
+        # run: rsync -avz --delete src/ user@server:/path/to/destination/
+
+      - name: Commit and push changes to feature branch
+        run: |
+          branch_name="auto-update-${{ steps.timestamp.outputs.timestamp }}"
+          git add src/styles/useless.scss
+          git diff --staged --quiet || git commit -m "Auto-update SCSS at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git push -u origin $branch_name
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
+          
+      - name: Create tag
+        run: |
+          tag_name="v${{ steps.timestamp.outputs.timestamp }}"
+          git tag -a $tag_name -m "Automated update at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git push origin $tag_name
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
+
+      - name: Merge branch to main
+        run: |
+          git checkout main
+          branch_name="auto-update-${{ steps.timestamp.outputs.timestamp }}"
+          git merge --no-ff $branch_name -m "Merge auto-generated updates from $branch_name"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
+
+      - name: Backup old SCSS
+        run: npm run cleanup
+        
+      - name: Clean up old branches
+        run: npm run branch-cleanup 10
+        
+      - name: Workflow completion notification
+        run: echo "Echo-Tasker auto-deployment workflow completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
