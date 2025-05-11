@@ -65,6 +65,21 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
           
+      - name: Create Pull Request
+        id: create_pr
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.BOT_PAT_TOKEN }}
+          commit-message: Auto-update SCSS
+          title: "Auto-update SCSS at ${{ steps.timestamp.outputs.timestamp }}"
+          body: |
+            Automated PR created by Echo-Tasker
+            - Generated random SCSS styles
+            - Created at $(date -u '+%Y-%m-%d %H:%M:%S UTC')
+          branch: auto-update-${{ steps.timestamp.outputs.timestamp }}
+          base: main
+          labels: automated-pr, scss-update
+          
       - name: Create tag
         run: |
           tag_name="v${{ steps.timestamp.outputs.timestamp }}"
@@ -73,14 +88,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
 
-      - name: Merge branch to main
+      - name: Auto-approve and merge PR
+        if: steps.create_pr.outputs.pull-request-number
         run: |
-          git checkout main
-          branch_name="auto-update-${{ steps.timestamp.outputs.timestamp }}"
-          git merge --no-ff $branch_name -m "Merge auto-generated updates from $branch_name"
-          git push origin main
+          PR_NUMBER=${{ steps.create_pr.outputs.pull-request-number }}
+          # Approve PR
+          gh pr review $PR_NUMBER --approve
+          # Merge PR
+          gh pr merge $PR_NUMBER --merge --delete-branch
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
+          GH_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
 
       - name: Backup old SCSS
         run: npm run cleanup
