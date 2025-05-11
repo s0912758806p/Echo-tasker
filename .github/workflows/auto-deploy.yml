@@ -14,6 +14,9 @@ jobs:
   auto-deploy:
     runs-on: ubuntu-latest
     name: Generate and Commit Changes
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - name: Checkout repository
