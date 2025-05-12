@@ -2,13 +2,13 @@ name: Echo-Tasker Auto Deploy
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at 00:00 UTC
-    - cron: '0 4 * * *'  # Daily at 04:00 UTC
-    - cron: '0 8 * * *'  # Daily at 08:00 UTC
-    - cron: '0 12 * * *' # Daily at 12:00 UTC
-    - cron: '0 16 * * *' # Daily at 16:00 UTC
-    - cron: '0 20 * * *' # Daily at 20:00 UTC
-  workflow_dispatch:     # Allow manual triggers
+    - cron: "0 0 * * *" # Daily at 00:00 UTC
+    - cron: "0 4 * * *" # Daily at 04:00 UTC
+    - cron: "0 8 * * *" # Daily at 08:00 UTC
+    - cron: "0 12 * * *" # Daily at 12:00 UTC
+    - cron: "0 16 * * *" # Daily at 16:00 UTC
+    - cron: "0 20 * * *" # Daily at 20:00 UTC
+  workflow_dispatch: # Allow manual triggers
 
 jobs:
   auto-deploy:
@@ -22,33 +22,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0  # Fetch complete history for accurate merging
+          fetch-depth: 0 # Fetch complete history for accurate merging
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-          cache: 'npm'  # Enable dependency caching
+          node-version: "18"
+          cache: "npm" # Enable dependency caching
           cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        
+
       - name: Build TypeScript
         run: npm run build
-        
+
       - name: Generate timestamp for branch and tag
         id: timestamp
         run: echo "timestamp=$(date -u '+%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
-        
+
       - name: Create and checkout new branch
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "s0912758806p@gmail.com"
+          git config user.email "46482724+s0912758806p@users.noreply.github.com"
           branch_name="auto-update-${{ steps.timestamp.outputs.timestamp }}"
           git checkout -b $branch_name
           echo "Created new branch: $branch_name"
-        
+
       - name: Generate random SCSS
         run: npm run generate
 
@@ -67,7 +67,7 @@ jobs:
           git push -u origin $branch_name
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_PAT_TOKEN }}
-          
+
       - name: Create Pull Request
         id: create_pr
         uses: peter-evans/create-pull-request@v5
@@ -82,7 +82,7 @@ jobs:
           branch: auto-update-${{ steps.timestamp.outputs.timestamp }}
           base: main
           labels: automated-pr, scss-update
-          
+
       - name: Create tag
         run: |
           tag_name="v${{ steps.timestamp.outputs.timestamp }}"
@@ -105,9 +105,9 @@ jobs:
 
       - name: Backup old SCSS
         run: npm run cleanup
-        
+
       - name: Clean up old branches
         run: npm run branch-cleanup 10
-        
+
       - name: Workflow completion notification
         run: echo "Echo-Tasker auto-deployment workflow completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
