@@ -11,6 +11,7 @@
     "list-branches": "ts-node script/manage-branches.ts list-branches",
     "list-tags": "ts-node script/manage-branches.ts list-tags",
     "branch-cleanup": "ts-node script/manage-branches.ts cleanup",
+    "clean-branches": "ts-node script/cleanup-branches.ts",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "repository": {

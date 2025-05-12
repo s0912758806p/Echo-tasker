@@ -117,7 +117,7 @@ jobs:
         run: npm run cleanup
 
       - name: Clean up old branches
-        run: npm run branch-cleanup 10
+        run: npm run clean-branches 3
 
       - name: Workflow completion notification
         run: echo "Echo-Tasker auto-deployment workflow completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
