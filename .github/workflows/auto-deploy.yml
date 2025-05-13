@@ -19,6 +19,9 @@ on:
     - cron: "21 22 * * *"
     - cron: "23 0 * * *"
 
+permissions:
+  contents: write
+
 jobs:
   autogreen:
     runs-on: ubuntu-latest
