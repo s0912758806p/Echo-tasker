@@ -1,0 +1,63 @@
+name: Echo-auto-scheduler
+
+on:
+  schedule:
+    - cron: "5 0 * * *"
+
+jobs:
+  schedule-jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate random times and schedule runs
+        run: |
+          count=$(( RANDOM % 8 + 3 ))  # 3~10
+          max_delay=$((5 * 3600))      # 5 hours
+
+          echo "👉 Will schedule $count runs today between TW 08:30~23:30"
+
+          # keep alive, avoid idle timeout
+          while true; do echo "⏳ Keeping alive..."; sleep 60; done &
+
+          for i in $(seq 1 $count); do
+            # generate random time between 08:30~23:30 in Taiwan
+            tw_hour=$(( RANDOM % 16 + 8 ))  # 8~23
+            tw_minute=$(( RANDOM % 60 ))
+
+            # if it's 8 o'clock, limit to start from 30 minutes
+            if [ $tw_hour -eq 8 ] && [ $tw_minute -lt 30 ]; then
+              tw_minute=$(( tw_minute + 30 ))
+            fi
+
+            # if it's 23 o'clock, limit to 30 minutes
+            if [ $tw_hour -eq 23 ] && [ $tw_minute -gt 30 ]; then
+              tw_minute=30
+            fi
+
+            # convert to UTC
+            utc_hour=$(( (tw_hour + 24 - 8) % 24 ))  # TW → UTC
+            now_utc=$(date -u +%s)
+            target_utc=$(date -u -d "$(printf "%02d:%02d" $utc_hour $tw_minute)" +%s)
+
+            # if the time has passed, add one day
+            if [ $target_utc -lt $now_utc ]; then
+              target_utc=$(( target_utc + 86400 ))
+            fi
+
+            delay=$(( target_utc - now_utc ))
+
+            if [ $delay -gt $max_delay ]; then
+              echo "⚠️ Skipping TW $tw_hour:$tw_minute (delay $delay > $max_delay)"
+              continue
+            fi
+
+            echo "✅ Scheduling run in $delay seconds (TW $tw_hour:$tw_minute → UTC $utc_hour:$tw_minute)"
+
+            nohup bash -c "sleep $delay && curl -X POST \
+              -H 'Authorization: token ${{ secrets.MYSELF_PAT_TOKEN }}' \
+              -H 'Accept: application/vnd.github.v3+json' \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/echo-auto-deploy.yml/dispatches \
+              -d '{\"ref\":\"main\"}'" >/dev/null 2>&1 &
+          done
+
+          wait
