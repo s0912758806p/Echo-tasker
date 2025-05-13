@@ -1,123 +1,36 @@
-name: Echo-Tasker Auto Deploy
+name: ci
 
 on:
+  push:
+    branches:
+      - main
+      - master
   schedule:
-    - cron: "0 0 * * *" # Daily at 00:00 UTC
-    - cron: "0 4 * * *" # Daily at 04:00 UTC
-    - cron: "0 8 * * *" # Daily at 08:00 UTC
-    - cron: "0 12 * * *" # Daily at 12:00 UTC
-    - cron: "0 16 * * *" # Daily at 16:00 UTC
-    - cron: "0 20 * * *" # Daily at 20:00 UTC
-  workflow_dispatch: # Allow manual triggers
-
-concurrency:
-  group: auto-deploy
-  cancel-in-progress: true
+    - cron: "1 2 * * *"
+    - cron: "3 4 * * *"
+    - cron: "5 6 * * *"
+    - cron: "7 8 * * *"
+    - cron: "9 10 * * *"
+    - cron: "11 12 * * *"
+    - cron: "13 14 * * *"
+    - cron: "15 16 * * *"
+    - cron: "17 18 * * *"
+    - cron: "19 20 * * *"
+    - cron: "21 22 * * *"
+    - cron: "23 0 * * *"
 
 jobs:
-  auto-deploy:
+  autogreen:
     runs-on: ubuntu-latest
-    name: Generate and Commit Changes
-    permissions:
-      contents: write
-      pull-requests: write
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # Fetch complete history for accurate merging
-          token: ${{ secrets.MYSELF_PAT_TOKEN }}
+      - name: Clone repository
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-          cache: "npm" # Enable dependency caching
-          cache-dependency-path: package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build TypeScript
-        run: npm run build
-
-      - name: Generate timestamp for branch and tag
-        id: timestamp
-        run: echo "timestamp=$(date -u '+%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
-
-      - name: Set Git configuration
+      - name: Auto green
         run: |
-          git config user.name "Gorman"
-          git config user.email "s0912758806p@gmail.com"
-          # 設置帶 token 的遠端 URL
-          git remote set-url origin https://x-access-token:${{ secrets.MYSELF_PAT_TOKEN }}@github.com/s0912758806p/Echo-tasker.git
-
-      - name: Create and checkout new branch
-        run: |
-          branch_name="auto-update-${{ steps.timestamp.outputs.timestamp }}"
-          git checkout -b $branch_name
-          echo "Created new branch: $branch_name"
-          echo "BRANCH_NAME=$branch_name" >> $GITHUB_ENV
-
-      - name: Generate random SCSS
-        run: npm run generate
-
-      - name: "Optional: Deploy (if required)"
-        run: echo "Deployment step - add your deployment commands here"
-        # Uncomment below to enable actual deployment
-        # run: bash scripts/deploy.sh
-        # Or use rsync for deployment:
-        # run: rsync -avz --delete src/ user@server:/path/to/destination/
-
-      - name: Commit and push changes to feature branch
-        run: |
-          git add src/styles/useless.scss
-          git diff --staged --quiet || git commit -m "Auto-update SCSS at $(date -u '+%Y-%m-%d %H:%M:%S UTC')" --author="Gorman <s0912758806p@gmail.com>"
-          git push -u origin ${{ env.BRANCH_NAME }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.MYSELF_PAT_TOKEN }}
-
-      - name: Create Pull Request
-        id: create_pr
-        uses: peter-evans/create-pull-request@v5
-        with:
-          token: ${{ secrets.MYSELF_PAT_TOKEN }}
-          commit-message: Auto-update SCSS
-          title: "Auto-update SCSS at ${{ steps.timestamp.outputs.timestamp }}"
-          body: |
-            Automated PR created by Echo-Tasker
-            - Generated random SCSS styles
-            - Created at $(date -u '+%Y-%m-%d %H:%M:%S UTC')
-          branch: ${{ env.BRANCH_NAME }}
-          base: main
-          labels: automated-pr, scss-update
-
-      - name: Create tag
-        run: |
-          tag_name="v${{ steps.timestamp.outputs.timestamp }}"
-          git tag -a $tag_name -m "Automated update at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-          git push origin $tag_name
-        env:
-          GITHUB_TOKEN: ${{ secrets.MYSELF_PAT_TOKEN }}
-
-      - name: Auto-approve and merge PR
-        if: steps.create_pr.outputs.pull-request-number
-        run: |
-          PR_NUMBER=${{ steps.create_pr.outputs.pull-request-number }}
-          # Approve PR
-          gh pr review $PR_NUMBER --approve
-          # Merge PR
-          gh pr merge $PR_NUMBER --merge --delete-branch
-        env:
-          GITHUB_TOKEN: ${{ secrets.MYSELF_PAT_TOKEN }}
-          GH_TOKEN: ${{ secrets.MYSELF_PAT_TOKEN }}
-
-      - name: Backup old SCSS
-        run: npm run cleanup
-
-      - name: Clean up old branches
-        run: npm run clean-branches 3
-
-      - name: Workflow completion notification
-        run: echo "Echo-Tasker auto-deployment workflow completed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          git config --local user.email "s0912758806p@gmail.com"
+          git config --local user.name "Gorman"
+          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git pull --rebase
+          git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+          git push
