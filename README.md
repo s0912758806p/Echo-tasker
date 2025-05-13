@@ -1,19 +1,18 @@
 # Echo-tasker
 
-Echo-tasker is an automation tool designed to keep your GitHub repository active. It automatically generates meaningless SCSS file changes and commits them, maintaining activity history on your repository.
+Echo-tasker is an automation tool designed to keep your GitHub repository active. It automatically generates empty commits or meaningless SCSS file changes and commits them, maintaining activity history on your repository.
 
 ## Features
 
-- Runs automatically 3 times per day (0:00, 8:00, 16:00 UTC)
-- Generates CSS classes with timestamps
-- Automatically creates new branches for each update
-- Automatically tags each version
-- Merges changes back to the main branch
-- Can be triggered manually
+- Smart scheduling: Automatically runs 5-13 times per day between 08:30-23:30 TW time
+- Generates CSS classes with timestamps and random styling properties
+- Creates empty commits when needed
+- Supports branch management (create, list, cleanup)
+- Can be triggered manually through GitHub Actions
 
 ## Setup Guide
 
-1. Create a secret named `BOT_PAT_TOKEN` in your GitHub repository (Settings > Secrets > Actions)
+1. Create a secret named `MYSELF_PAT_TOKEN` in your GitHub repository (Settings > Secrets > Actions)
 2. Ensure the token has appropriate permissions (requires repo access)
 3. The workflow will run automatically according to schedule
 
@@ -30,26 +29,23 @@ cd Echo-tasker
 npm install
 ```
 
-## Customization
+## Project Structure
 
-You can customize this tool by:
-- Modifying schedule times in `.github/workflows/auto-deploy.yml`
-- Adjusting `script/generate-useless-scss.ts` to generate different content
-- Changing branch and tag naming patterns in the workflow file
+```
+├── .github/workflows/      # GitHub Actions workflow files
+│   ├── echo-auto-scheduler.yml  # Schedules runs throughout the day
+│   └── auto-deploy.yml     # Performs the actual commits
+├── script/                 # TypeScript scripts
+│   ├── generate-useless-scss.ts  # Generates random SCSS classes
+│   ├── cleanup-useless-scss.ts   # Cleans up generated SCSS files
+│   ├── manage-branches.ts        # Branch management utilities
+│   ├── cleanup-branches.ts       # Branch cleanup functionality
+│   └── branch-utilities.ts       # Shared branch utilities
+└── src/                    # Source directory
+    └── styles/             # Generated SCSS files
+```
 
-## Branch and Tag Strategy
-
-The tool implements the following strategy:
-- For each run, a new branch is created with a timestamp (e.g., `auto-update-20231110-123045`)
-- Changes are committed to this branch
-- A version tag is applied (e.g., `v20231110-123045`)
-- The branch is then merged back to the main branch
-
-## Manual Execution
-
-You can manually trigger the workflow from the Actions tab in your GitHub repository.
-
-## Development
+## Available Commands
 
 ```bash
 # Build TypeScript files
@@ -60,8 +56,38 @@ npm run generate
 
 # Cleanup SCSS files
 npm run cleanup
+
+# Branch management
+npm run branches           # Run branch management functions
+npm run list-branches      # List all branches
+npm run list-tags          # List all tags
+npm run branch-cleanup     # Clean up old branches
+npm run clean-branches     # Alternative branch cleanup
 ```
+
+## Customization
+
+You can customize this tool by:
+
+- Modifying schedule patterns in `.github/workflows/echo-auto-scheduler.yml`
+- Adjusting `script/generate-useless-scss.ts` to generate different content
+- Changing commit messages in `auto-deploy.yml`
+
+## Workflow Strategy
+
+The tool implements a two-part workflow:
+
+- `echo-auto-scheduler.yml` runs once daily and schedules 5-13 random runs for the day
+- `auto-deploy.yml` performs the actual commits, either empty ones or with SCSS changes
+
+## Manual Execution
+
+You can manually trigger the workflow from the Actions tab in your GitHub repository.
 
 ## License
 
 MIT License © Gorman
+
+## Author
+
+Gorman
