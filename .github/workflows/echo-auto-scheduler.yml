@@ -31,7 +31,7 @@ jobs:
           done
 
           # random select count unique times
-          shuffled_times=($(printf "%s\n" "${valid_times[@]}" | shuf | head -n $count))
+          shuffled_times=($(printf "%s\n" "${valid_times[@]}" | shuf | head -n $count | sort))
 
           for tw_time in "${shuffled_times[@]}"; do
             tw_hour=${tw_time%:*}
