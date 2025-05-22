@@ -37,5 +37,5 @@ jobs:
           git config --local user.name "Gorman"
           git remote set-url origin https://x-access-token:${{ secrets.MYSELF_PAT_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+          git commit --allow-empty -m "auto deploy ${{ github.retention_days }} days ago"
           git push
