@@ -1,0 +1,16 @@
+
+/* 2026-05-12 13:50:06 */
+.tile-muted-lg-5006 {
+  margin: 36px;
+  padding: 12px;
+  color: #5eae02;
+  background-color: #0b96ac;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
