@@ -5,8 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "generate": "ts-node script/generate-useless-scss.ts",
-    "cleanup": "ts-node script/cleanup-useless-scss.ts",
+    "update-theme": "ts-node script/update-theme.ts",
     "branches": "ts-node script/manage-branches.ts",
     "list-branches": "ts-node script/manage-branches.ts list-branches",
     "list-tags": "ts-node script/manage-branches.ts list-tags",
@@ -26,13 +25,11 @@
   "author": "Gorman",
   "license": "MIT",
   "dependencies": {
-    "fs-extra": "^11.1.1",
     "moment": "^2.29.4"
   },
   "devDependencies": {
-    "@types/fs-extra": "^11.0.2",
     "@types/node": "^18.17.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
   }
-} 
+}

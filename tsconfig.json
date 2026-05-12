@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node", "fs-extra", "moment"]
+    "types": ["node", "moment"]
   },
   "include": [
     "script/**/*",

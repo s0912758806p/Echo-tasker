@@ -1,25 +1,24 @@
 name: Echo-auto-deploy
 
 on:
-  push:
-    branches:
-      - main
-      - master
-
   workflow_dispatch:
-  # schedule:
-  #   - cron: "1 2 * * *"
-  #   - cron: "3 4 * * *"
-  #   - cron: "5 6 * * *"
-  #   - cron: "7 8 * * *"
-  #   - cron: "9 10 * * *"
-  #   - cron: "11 12 * * *"
-  #   - cron: "13 14 * * *"
-  #   - cron: "15 16 * * *"
-  #   - cron: "17 18 * * *"
-  #   - cron: "19 20 * * *"
-  #   - cron: "21 22 * * *"
-  #   - cron: "23 0 * * *"
+  schedule:
+    - cron: "30 0  * * *"  # TW 08:30
+    - cron: "30 1  * * *"  # TW 09:30
+    - cron: "30 2  * * *"  # TW 10:30
+    - cron: "30 3  * * *"  # TW 11:30
+    - cron: "30 4  * * *"  # TW 12:30
+    - cron: "30 5  * * *"  # TW 13:30
+    - cron: "30 6  * * *"  # TW 14:30
+    - cron: "30 7  * * *"  # TW 15:30
+    - cron: "30 8  * * *"  # TW 16:30
+    - cron: "30 9  * * *"  # TW 17:30
+    - cron: "30 10 * * *"  # TW 18:30
+    - cron: "30 11 * * *"  # TW 19:30
+    - cron: "30 12 * * *"  # TW 20:30
+    - cron: "30 13 * * *"  # TW 21:30
+    - cron: "30 14 * * *"  # TW 22:30
+    - cron: "30 15 * * *"  # TW 23:30
 
 permissions:
   contents: write
@@ -27,15 +26,53 @@ permissions:
 jobs:
   autogreen:
     runs-on: ubuntu-latest
+    timeout-minutes: 70
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v2
+      - name: Decide & jitter
+        id: decide
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Manual dispatch — running"
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          elif [ $((RANDOM % 100)) -lt 56 ]; then
+            jitter=$((RANDOM % 3300))
+            echo "🎲 Roll: run after ${jitter}s jitter"
+            sleep "$jitter"
+            echo "go=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "🎲 Roll: skip this slot"
+            echo "go=false" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Auto green
+      - if: steps.decide.outputs.go == 'true'
+        uses: actions/checkout@v4
+
+      - if: steps.decide.outputs.go == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - if: steps.decide.outputs.go == 'true'
+        name: Install deps
+        run: npm ci
+
+      - if: steps.decide.outputs.go == 'true'
+        name: Update theme & pick commit message
+        id: gen
+        run: |
+          msg=$(npx ts-node script/update-theme.ts)
+          echo "msg=$msg" >> "$GITHUB_OUTPUT"
+
+      - if: steps.decide.outputs.go == 'true'
+        name: Commit & push
+        env:
+          COMMIT_MSG: ${{ steps.gen.outputs.msg }}
         run: |
           git config --local user.email "s0912758806p@gmail.com"
           git config --local user.name "Gorman"
           git remote set-url origin https://x-access-token:${{ secrets.MYSELF_PAT_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "auto deploy ${{ github.retention_days }} days ago"
+          git add -A
+          git commit -m "$COMMIT_MSG"
           git push

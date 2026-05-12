@@ -25,5 +25,3 @@ npm-debug.log*
 dist/
 *.tsbuildinfo
 
-# Backup files
-src/styles/useless-backup-*.scss 
