@@ -23,6 +23,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: echo-auto-deploy
+  cancel-in-progress: false
+
 jobs:
   autogreen:
     runs-on: ubuntu-latest
@@ -45,12 +49,14 @@ jobs:
           fi
 
       - if: steps.decide.outputs.go == 'true'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          persist-credentials: false
 
       - if: steps.decide.outputs.go == 'true'
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - if: steps.decide.outputs.go == 'true'
@@ -68,11 +74,16 @@ jobs:
         name: Commit & push
         env:
           COMMIT_MSG: ${{ steps.gen.outputs.msg }}
+          PAT: ${{ secrets.MYSELF_PAT_TOKEN }}
         run: |
           git config --local user.email "s0912758806p@gmail.com"
           git config --local user.name "Gorman"
-          git remote set-url origin https://x-access-token:${{ secrets.MYSELF_PAT_TOKEN }}@github.com/${{ github.repository }}
-          git pull --rebase
+          git remote set-url origin "https://x-access-token:${PAT}@github.com/${{ github.repository }}"
           git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit — skipping."
+            exit 0
+          fi
           git commit -m "$COMMIT_MSG"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
