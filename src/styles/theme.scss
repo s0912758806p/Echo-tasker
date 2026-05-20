@@ -18,3 +18,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-05-20 05:40:58 */
+.panel-muted-md-4058 {
+  margin: 39px;
+  padding: 2px;
+  color: #beb8d4;
+  background-color: #93bb3f;
+  border-radius: 0px;
+  font-size: 22px;
+  box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
