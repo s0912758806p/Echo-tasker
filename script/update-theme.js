@@ -1,13 +1,13 @@
-import {
+const {
   appendFileSync,
   existsSync,
   mkdirSync,
   readFileSync,
   writeFileSync,
-} from 'fs';
+} = require('fs');
 
 const now = new Date();
-const pad = (n: number) => String(n).padStart(2, '0');
+const pad = (n) => String(n).padStart(2, '0');
 const stamp =
   `${now.getFullYear()}${pad(now.getMonth() + 1)}${pad(now.getDate())}` +
   `-${pad(now.getHours())}${pad(now.getMinutes())}${pad(now.getSeconds())}`;
@@ -17,8 +17,8 @@ const human =
 const dateOnly =
   `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
 
-const pick = <T>(a: T[]): T => a[Math.floor(Math.random() * a.length)];
-const rand = (min: number, max: number) =>
+const pick = (a) => a[Math.floor(Math.random() * a.length)];
+const rand = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min);
 const hex = () =>
   '#' + Math.floor(Math.random() * 0xffffff).toString(16).padStart(6, '0');
@@ -33,7 +33,7 @@ const components = ['btn', 'card', 'panel', 'badge', 'chip', 'hint', 'tag', 'til
 const variants = ['primary', 'secondary', 'subtle', 'muted', 'accent', 'ghost'];
 const sizes = ['sm', 'md', 'lg'];
 
-function buildRule(): string {
+function buildRule() {
   const className =
     `${pick(components)}-${pick(variants)}-${pick(sizes)}-${stamp.slice(-4)}`;
   return `
@@ -55,7 +55,7 @@ function buildRule(): string {
 `;
 }
 
-function opAppendSCSS(): string {
+function opAppendSCSS() {
   const file = pick(scssFiles);
   mkdirSync('src/styles', { recursive: true });
   appendFileSync(file, buildRule());
@@ -77,20 +77,18 @@ function opAppendSCSS(): string {
 
 const TS_COMMENT_LEN = 25; // "/* YYYY-MM-DD HH:MM:SS */"
 
-function opModifySCSS(): string {
+function opModifySCSS() {
   const existing = scssFiles.filter(existsSync);
   if (existing.length === 0) return opAppendSCSS();
 
   const file = pick(existing);
   const content = readFileSync(file, 'utf8');
 
-  // Locate every rule start (timestamp comment)
   const tsRegex = /\/\* \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \*\//g;
-  const tsPositions: number[] = [];
-  let m: RegExpExecArray | null;
+  const tsPositions = [];
+  let m;
   while ((m = tsRegex.exec(content)) !== null) tsPositions.push(m.index);
 
-  // Restrict edits to the last N rules (N varies 3~7 per run)
   const recentN = rand(3, 7);
   const windowStart =
     tsPositions.length === 0
@@ -108,11 +106,9 @@ function opModifySCSS(): string {
     newVal = Math.min(50, Math.max(1, oldVal + pick([-3, -2, -1, 1, 2, 3])));
   }
 
-  const absIdx = windowStart + target.index!;
-  // Which rule owns this px? Latest timestamp at or before absIdx.
+  const absIdx = windowStart + target.index;
   const ruleStart = tsPositions.filter((p) => p <= absIdx).pop();
 
-  // px sits after the timestamp, so replace px first then bump the comment.
   let next =
     content.slice(0, absIdx) +
     `${newVal}px` +
@@ -137,7 +133,7 @@ function opModifySCSS(): string {
   ]);
 }
 
-function opBumpVersion(): string {
+function opBumpVersion() {
   const pkgPath = 'package.json';
   const pkg = JSON.parse(readFileSync(pkgPath, 'utf8'));
   const [major, minor, patch] = pkg.version.split('.').map(Number);
@@ -151,7 +147,7 @@ function opBumpVersion(): string {
   ]);
 }
 
-function opChangelog(): string {
+function opChangelog() {
   const path = 'CHANGELOG.md';
   const entry = `- ${dateOnly}: ${pick([
     'minor style updates',
@@ -174,7 +170,7 @@ function opChangelog(): string {
 }
 
 const roll = Math.random() * 100;
-let msg: string;
+let msg;
 if (roll < 60) {
   msg = opAppendSCSS();
 } else if (roll < 80) {
@@ -183,6 +179,11 @@ if (roll < 60) {
   msg = opBumpVersion();
 } else {
   msg = opChangelog();
+}
+
+// Hard guarantee: always emit a non-empty message so the workflow never sees empty COMMIT_MSG.
+if (!msg || !msg.trim()) {
+  msg = 'chore: refresh theme';
 }
 
 process.stdout.write(msg);

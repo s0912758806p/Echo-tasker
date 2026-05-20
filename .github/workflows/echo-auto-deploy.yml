@@ -57,17 +57,16 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: '22'
-          cache: 'npm'
-
-      - if: steps.decide.outputs.go == 'true'
-        name: Install deps
-        run: npm ci
 
       - if: steps.decide.outputs.go == 'true'
         name: Update theme & pick commit message
         id: gen
         run: |
-          msg=$(npx ts-node script/update-theme.ts)
+          set -x
+          msg=$(node script/update-theme.js)
+          if [ -z "$msg" ]; then
+            msg="chore: refresh theme"
+          fi
           echo "msg=$msg" >> "$GITHUB_OUTPUT"
 
       - if: steps.decide.outputs.go == 'true'
@@ -76,14 +75,18 @@ jobs:
           COMMIT_MSG: ${{ steps.gen.outputs.msg }}
           PAT: ${{ secrets.MYSELF_PAT_TOKEN }}
         run: |
+          set -x
+          : "${COMMIT_MSG:=chore: refresh theme}"
           git config --local user.email "s0912758806p@gmail.com"
           git config --local user.name "Gorman"
           git remote set-url origin "https://x-access-token:${PAT}@github.com/${{ github.repository }}"
+          git status
           git add -A
           if git diff --cached --quiet; then
-            echo "No changes to commit — skipping."
-            exit 0
+            echo "No changes to commit — falling back to empty commit."
+            git commit --allow-empty -m "$COMMIT_MSG"
+          else
+            git commit -m "$COMMIT_MSG"
           fi
-          git commit -m "$COMMIT_MSG"
           git pull --rebase origin main
           git push origin HEAD:main
