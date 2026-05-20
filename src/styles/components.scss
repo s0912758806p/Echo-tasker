@@ -62,3 +62,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-05-20 10:53:25 */
+.panel-secondary-md-5325 {
+  margin: 49px;
+  padding: 20px;
+  color: #118dd6;
+  background-color: #150deb;
+  border-radius: 11px;
+  font-size: 15px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
