@@ -30,3 +30,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-05-21 04:56:54 */
+.hint-subtle-sm-5654 {
+  margin: 50px;
+  padding: 23px;
+  color: #8b3a9e;
+  background-color: #03d17e;
+  border-radius: 17px;
+  font-size: 24px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
