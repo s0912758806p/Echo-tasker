@@ -98,3 +98,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-05-22 17:16:47 */
+.hint-muted-md-1647 {
+  margin: 46px;
+  padding: 26px;
+  color: #bfa528;
+  background-color: #71ca7d;
+  border-radius: 4px;
+  font-size: 22px;
+  box-shadow: 5px 2px 1px rgba(0, 0, 0, 0.7);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
