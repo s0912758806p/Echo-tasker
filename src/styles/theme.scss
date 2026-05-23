@@ -114,3 +114,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-05-23 05:40:51 */
+.chip-muted-lg-4051 {
+  margin: 14px;
+  padding: 0px;
+  color: #9c4101;
+  background-color: #d8370d;
+  border-radius: 17px;
+  font-size: 14px;
+  box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
