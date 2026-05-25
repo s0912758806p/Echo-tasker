@@ -210,3 +210,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-05-25 18:09:19 */
+.badge-secondary-lg-0919 {
+  margin: 48px;
+  padding: 12px;
+  color: #59ff61;
+  background-color: #11e00a;
+  border-radius: 8px;
+  font-size: 13px;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.1);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
