@@ -162,3 +162,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-05-25 08:34:18 */
+.card-primary-lg-3418 {
+  margin: 13px;
+  padding: 28px;
+  color: #30c8ad;
+  background-color: #0b29e5;
+  border-radius: 1px;
+  font-size: 22px;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
