@@ -274,3 +274,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-05-28 05:43:56 */
+.panel-ghost-lg-4356 {
+  margin: 32px;
+  padding: 19px;
+  color: #523f94;
+  background-color: #dc5979;
+  border-radius: 9px;
+  font-size: 18px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.8);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
