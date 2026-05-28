@@ -290,3 +290,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-05-28 16:52:43 */
+.btn-primary-md-5243 {
+  margin: 9px;
+  padding: 5px;
+  color: #fb8480;
+  background-color: #5f286a;
+  border-radius: 13px;
+  font-size: 17px;
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
