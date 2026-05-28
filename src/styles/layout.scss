@@ -158,3 +158,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-05-28 18:23:29 */
+.hint-ghost-sm-2329 {
+  margin: 16px;
+  padding: 28px;
+  color: #2939ce;
+  background-color: #2733b1;
+  border-radius: 15px;
+  font-size: 20px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.8);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
