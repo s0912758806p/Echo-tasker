@@ -206,3 +206,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-05-30 07:00:38 */
+.panel-accent-lg-0038 {
+  margin: 19px;
+  padding: 23px;
+  color: #2d41e0;
+  background-color: #f543c7;
+  border-radius: 8px;
+  font-size: 21px;
+  box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.3);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
