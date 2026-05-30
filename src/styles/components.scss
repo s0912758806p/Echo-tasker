@@ -366,3 +366,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-05-30 16:20:01 */
+.panel-accent-sm-2001 {
+  margin: 39px;
+  padding: 25px;
+  color: #de0a46;
+  background-color: #3c1c78;
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
