@@ -338,3 +338,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-05-30 05:10:13 */
+.tag-secondary-sm-1013 {
+  margin: 27px;
+  padding: 12px;
+  color: #a123e3;
+  background-color: #42e8ae;
+  border-radius: 7px;
+  font-size: 24px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.7);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
