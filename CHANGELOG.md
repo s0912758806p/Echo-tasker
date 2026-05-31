@@ -5,3 +5,4 @@
 - 2026-05-25: spacing refinements
 - 2026-05-28: theme refresh
 - 2026-05-31: minor style updates
+- 2026-05-31: utility class tweaks
