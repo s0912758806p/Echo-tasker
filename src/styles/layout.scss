@@ -238,3 +238,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-06-02 11:15:38 */
+.tag-ghost-md-1538 {
+  margin: 31px;
+  padding: 13px;
+  color: #035269;
+  background-color: #c36f02;
+  border-radius: 16px;
+  font-size: 13px;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
