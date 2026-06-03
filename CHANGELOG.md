@@ -6,3 +6,4 @@
 - 2026-05-28: theme refresh
 - 2026-05-31: minor style updates
 - 2026-05-31: utility class tweaks
+- 2026-06-03: minor style updates
