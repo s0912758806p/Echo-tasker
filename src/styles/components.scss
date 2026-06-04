@@ -542,3 +542,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-06-04 16:37:08 */
+.hint-secondary-lg-3708 {
+  margin: 24px;
+  padding: 26px;
+  color: #053389;
+  background-color: #ac8058;
+  border-radius: 7px;
+  font-size: 24px;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
