@@ -578,3 +578,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-06-06 15:03:28 */
+.btn-primary-sm-0328 {
+  margin: 50px;
+  padding: 10px;
+  color: #78ddd3;
+  background-color: #817bec;
+  border-radius: 8px;
+  font-size: 17px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
