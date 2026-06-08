@@ -398,3 +398,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-06-08 12:49:50 */
+.btn-ghost-md-4950 {
+  margin: 14px;
+  padding: 14px;
+  color: #3edbbf;
+  background-color: #48568d;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 3px 1px 10px rgba(0, 0, 0, 0.8);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
