@@ -10,3 +10,4 @@
 - 2026-06-04: theme refresh
 - 2026-06-05: minor style updates
 - 2026-06-09: tokens adjustment
+- 2026-06-09: minor style updates
