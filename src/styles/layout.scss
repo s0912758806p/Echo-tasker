@@ -446,3 +446,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-06-11 13:16:47 */
+.btn-ghost-sm-1647 {
+  margin: 48px;
+  padding: 21px;
+  color: #7671a9;
+  background-color: #e4a985;
+  border-radius: 8px;
+  font-size: 23px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
