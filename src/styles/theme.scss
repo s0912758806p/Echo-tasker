@@ -642,3 +642,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-06-13 07:26:29 */
+.hint-muted-sm-2629 {
+  margin: 7px;
+  padding: 23px;
+  color: #bf4589;
+  background-color: #d47b18;
+  border-radius: 9px;
+  font-size: 20px;
+  box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
