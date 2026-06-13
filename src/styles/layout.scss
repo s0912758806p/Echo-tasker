@@ -494,3 +494,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-06-13 10:39:40 */
+.badge-ghost-sm-3940 {
+  margin: 42px;
+  padding: 9px;
+  color: #5d3907;
+  background-color: #497510;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
