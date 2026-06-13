@@ -478,3 +478,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-06-13 05:51:51 */
+.badge-primary-md-5151 {
+  margin: 18px;
+  padding: 19px;
+  color: #672dce;
+  background-color: #801aa6;
+  border-radius: 13px;
+  font-size: 18px;
+  box-shadow: 5px 1px 7px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
