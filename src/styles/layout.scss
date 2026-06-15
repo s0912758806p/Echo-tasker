@@ -574,3 +574,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-06-15 17:52:48 */
+.btn-muted-lg-5248 {
+  margin: 21px;
+  padding: 1px;
+  color: #6892a1;
+  background-color: #12fd4c;
+  border-radius: 10px;
+  font-size: 24px;
+  box-shadow: 1px 4px 2px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
