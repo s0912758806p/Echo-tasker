@@ -674,3 +674,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-06-15 11:10:29 */
+.badge-subtle-sm-1029 {
+  margin: 7px;
+  padding: 13px;
+  color: #9043c2;
+  background-color: #16b099;
+  border-radius: 2px;
+  font-size: 18px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
