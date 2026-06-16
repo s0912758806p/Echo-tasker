@@ -14,3 +14,4 @@
 - 2026-06-10: minor style updates
 - 2026-06-10: tokens adjustment
 - 2026-06-10: spacing refinements
+- 2026-06-16: minor style updates
