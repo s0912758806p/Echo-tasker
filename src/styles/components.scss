@@ -910,3 +910,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-06-17 06:33:57 */
+.card-primary-md-3357 {
+  margin: 7px;
+  padding: 23px;
+  color: #52d8d3;
+  background-color: #3f7b4f;
+  border-radius: 7px;
+  font-size: 24px;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.7);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
