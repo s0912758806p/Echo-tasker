@@ -958,3 +958,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-06-18 12:25:43 */
+.btn-primary-lg-2543 {
+  margin: 36px;
+  padding: 13px;
+  color: #e543b1;
+  background-color: #e2e636;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 4px 2px 7px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
