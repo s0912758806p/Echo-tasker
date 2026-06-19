@@ -990,3 +990,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-06-19 09:54:03 */
+.hint-accent-md-5403 {
+  margin: 15px;
+  padding: 24px;
+  color: #6eb3b1;
+  background-color: #7096ff;
+  border-radius: 11px;
+  font-size: 17px;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
