@@ -766,3 +766,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-06-23 08:50:43 */
+.panel-ghost-sm-5043 {
+  margin: 2px;
+  padding: 13px;
+  color: #95f835;
+  background-color: #4957a3;
+  border-radius: 4px;
+  font-size: 12px;
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.4);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
