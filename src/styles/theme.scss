@@ -914,3 +914,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-06-26 12:48:25 */
+.btn-secondary-md-4825 {
+  margin: 25px;
+  padding: 11px;
+  color: #4e6126;
+  background-color: #dfe20e;
+  border-radius: 3px;
+  font-size: 21px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.8);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
