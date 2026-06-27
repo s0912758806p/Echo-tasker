@@ -930,3 +930,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-06-27 08:36:58 */
+.tile-primary-lg-3658 {
+  margin: 4px;
+  padding: 1px;
+  color: #55d7ea;
+  background-color: #9a6aaa;
+  border-radius: 13px;
+  font-size: 19px;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.9);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
