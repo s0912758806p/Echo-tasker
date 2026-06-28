@@ -962,3 +962,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-06-28 10:25:58 */
+.tile-accent-lg-2558 {
+  margin: 18px;
+  padding: 9px;
+  color: #e97ea4;
+  background-color: #5043db;
+  border-radius: 15px;
+  font-size: 22px;
+  box-shadow: 4px 1px 7px rgba(0, 0, 0, 0.5);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
