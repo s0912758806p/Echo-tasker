@@ -1326,3 +1326,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-06-28 15:16:37 */
+.card-ghost-sm-1637 {
+  margin: 38px;
+  padding: 8px;
+  color: #22c465;
+  background-color: #9437c1;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.8);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
