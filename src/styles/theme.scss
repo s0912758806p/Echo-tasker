@@ -1042,3 +1042,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-06-30 13:04:06 */
+.tag-accent-lg-0406 {
+  margin: 49px;
+  padding: 27px;
+  color: #ee2bac;
+  background-color: #506264;
+  border-radius: 19px;
+  font-size: 12px;
+  box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
