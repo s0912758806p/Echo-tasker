@@ -942,3 +942,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-06-30 10:26:10 */
+.btn-ghost-lg-2610 {
+  margin: 9px;
+  padding: 0px;
+  color: #4c2a14;
+  background-color: #54ebd7;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.8);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
