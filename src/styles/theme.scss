@@ -1170,3 +1170,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-07-03 13:12:48 */
+.panel-accent-lg-1248 {
+  margin: 17px;
+  padding: 10px;
+  color: #33226a;
+  background-color: #83a49d;
+  border-radius: 7px;
+  font-size: 20px;
+  box-shadow: 2px 1px 8px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
