@@ -1038,3 +1038,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-07-03 09:19:28 */
+.panel-ghost-sm-1928 {
+  margin: 37px;
+  padding: 8px;
+  color: #abd4e8;
+  background-color: #cc1d43;
+  border-radius: 11px;
+  font-size: 13px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.8);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
