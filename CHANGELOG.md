@@ -19,3 +19,4 @@
 - 2026-06-22: theme refresh
 - 2026-06-23: spacing refinements
 - 2026-06-26: theme refresh
+- 2026-07-04: minor style updates
