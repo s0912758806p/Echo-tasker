@@ -1118,3 +1118,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-07-06 17:02:35 */
+.btn-accent-sm-0235 {
+  margin: 17px;
+  padding: 25px;
+  color: #10e2a3;
+  background-color: #64dcdd;
+  border-radius: 6px;
+  font-size: 20px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.8);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
