@@ -1330,3 +1330,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-07-08 04:51:03 */
+.chip-ghost-sm-5103 {
+  margin: 27px;
+  padding: 28px;
+  color: #57ff84;
+  background-color: #75662d;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.8);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
