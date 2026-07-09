@@ -1486,3 +1486,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-07-09 08:35:50 */
+.tile-secondary-sm-3550 {
+  margin: 9px;
+  padding: 8px;
+  color: #9b0c85;
+  background-color: #a834f6;
+  border-radius: 1px;
+  font-size: 15px;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.1);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
