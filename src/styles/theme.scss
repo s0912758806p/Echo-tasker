@@ -1442,3 +1442,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-07-10 16:26:08 */
+.chip-accent-md-2608 {
+  margin: 40px;
+  padding: 25px;
+  color: #30837c;
+  background-color: #5ed3ae;
+  border-radius: 2px;
+  font-size: 23px;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.7);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
