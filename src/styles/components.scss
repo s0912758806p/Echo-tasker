@@ -1518,3 +1518,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-07-11 07:45:25 */
+.chip-accent-md-4525 {
+  margin: 34px;
+  padding: 8px;
+  color: #f5123d;
+  background-color: #f6871f;
+  border-radius: 11px;
+  font-size: 13px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
