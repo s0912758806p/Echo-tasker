@@ -1262,3 +1262,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-07-11 16:37:07 */
+.hint-accent-lg-3707 {
+  margin: 0px;
+  padding: 6px;
+  color: #87c67c;
+  background-color: #d84de7;
+  border-radius: 1px;
+  font-size: 15px;
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
