@@ -1278,3 +1278,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-07-12 08:22:42 */
+.btn-ghost-md-2242 {
+  margin: 41px;
+  padding: 0px;
+  color: #1999bd;
+  background-color: #de9786;
+  border-radius: 1px;
+  font-size: 22px;
+  box-shadow: 4px 2px 9px rgba(0, 0, 0, 0.6);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
