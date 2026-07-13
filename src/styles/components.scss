@@ -1598,3 +1598,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-07-13 13:28:00 */
+.badge-ghost-lg-2800 {
+  margin: 13px;
+  padding: 13px;
+  color: #2fa30e;
+  background-color: #5a7faf;
+  border-radius: 2px;
+  font-size: 20px;
+  box-shadow: 4px 1px 1px rgba(0, 0, 0, 0.9);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
