@@ -1326,3 +1326,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-07-14 13:11:05 */
+.tile-muted-sm-1105 {
+  margin: 40px;
+  padding: 8px;
+  color: #fd6ee1;
+  background-color: #f3053d;
+  border-radius: 19px;
+  font-size: 18px;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.3);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
