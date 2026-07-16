@@ -1570,3 +1570,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-07-16 04:52:03 */
+.btn-primary-md-5203 {
+  margin: 45px;
+  padding: 11px;
+  color: #c23cdc;
+  background-color: #4379e7;
+  border-radius: 7px;
+  font-size: 21px;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.6);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
