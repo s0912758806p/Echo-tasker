@@ -1374,3 +1374,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-07-16 11:39:10 */
+.tag-ghost-lg-3910 {
+  margin: 17px;
+  padding: 22px;
+  color: #fd2547;
+  background-color: #35dbfa;
+  border-radius: 7px;
+  font-size: 19px;
+  box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.3);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
