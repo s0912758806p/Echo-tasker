@@ -1710,3 +1710,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-07-17 04:31:48 */
+.btn-muted-sm-3148 {
+  margin: 8px;
+  padding: 12px;
+  color: #47f591;
+  background-color: #3f606b;
+  border-radius: 13px;
+  font-size: 23px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.9);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
