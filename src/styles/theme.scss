@@ -1586,3 +1586,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-07-17 09:51:48 */
+.hint-accent-md-5148 {
+  margin: 0px;
+  padding: 5px;
+  color: #c8bb57;
+  background-color: #ef9865;
+  border-radius: 0px;
+  font-size: 15px;
+  box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.8);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
