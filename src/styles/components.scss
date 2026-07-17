@@ -1758,3 +1758,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-07-17 16:24:37 */
+.tag-primary-lg-2437 {
+  margin: 1px;
+  padding: 23px;
+  color: #cc4167;
+  background-color: #653066;
+  border-radius: 0px;
+  font-size: 24px;
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.9);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
