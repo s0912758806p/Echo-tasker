@@ -1746,3 +1746,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-07-20 11:32:50 */
+.tag-accent-md-3250 {
+  margin: 22px;
+  padding: 24px;
+  color: #ffae4d;
+  background-color: #213d5c;
+  border-radius: 11px;
+  font-size: 12px;
+  box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
