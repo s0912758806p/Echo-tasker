@@ -1854,3 +1854,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-07-20 10:32:27 */
+.btn-accent-md-3227 {
+  margin: 2px;
+  padding: 7px;
+  color: #3cc3c3;
+  background-color: #27d152;
+  border-radius: 18px;
+  font-size: 23px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.6);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
