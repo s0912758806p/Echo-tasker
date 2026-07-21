@@ -1422,3 +1422,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-07-21 05:21:52 */
+.panel-secondary-sm-2152 {
+  margin: 8px;
+  padding: 30px;
+  color: #203631;
+  background-color: #7c980a;
+  border-radius: 3px;
+  font-size: 21px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
