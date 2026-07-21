@@ -1778,3 +1778,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-07-21 09:51:17 */
+.hint-muted-sm-5117 {
+  margin: 37px;
+  padding: 12px;
+  color: #d13fb9;
+  background-color: #a6881f;
+  border-radius: 1px;
+  font-size: 18px;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.5);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
