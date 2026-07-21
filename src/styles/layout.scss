@@ -1438,3 +1438,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-07-21 11:41:35 */
+.tag-secondary-sm-4135 {
+  margin: 47px;
+  padding: 17px;
+  color: #0a24c4;
+  background-color: #d64fcf;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
