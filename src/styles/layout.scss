@@ -1454,3 +1454,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-07-22 05:18:48 */
+.btn-ghost-lg-1848 {
+  margin: 4px;
+  padding: 7px;
+  color: #e6c02e;
+  background-color: #70969e;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.8);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
