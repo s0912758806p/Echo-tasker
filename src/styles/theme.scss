@@ -1826,3 +1826,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-07-22 13:47:17 */
+.tag-muted-lg-4717 {
+  margin: 6px;
+  padding: 7px;
+  color: #e6a8d3;
+  background-color: #2a76cb;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
