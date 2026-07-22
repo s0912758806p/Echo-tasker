@@ -1934,3 +1934,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-07-22 09:34:33 */
+.tag-accent-sm-3433 {
+  margin: 19px;
+  padding: 14px;
+  color: #8e9d6e;
+  background-color: #7b75fe;
+  border-radius: 5px;
+  font-size: 18px;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
