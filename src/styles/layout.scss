@@ -1518,3 +1518,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-07-23 10:05:07 */
+.btn-secondary-lg-0507 {
+  margin: 15px;
+  padding: 3px;
+  color: #c217ec;
+  background-color: #7e8ee6;
+  border-radius: 14px;
+  font-size: 19px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
