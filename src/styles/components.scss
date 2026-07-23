@@ -1950,3 +1950,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-07-23 07:09:13 */
+.tag-secondary-md-0913 {
+  margin: 28px;
+  padding: 2px;
+  color: #cceecf;
+  background-color: #84b5b2;
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: 3px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
