@@ -1938,3 +1938,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-07-25 12:26:11 */
+.btn-subtle-sm-2611 {
+  margin: 8px;
+  padding: 17px;
+  color: #8ba145;
+  background-color: #c86eae;
+  border-radius: 8px;
+  font-size: 22px;
+  box-shadow: 4px 5px 9px rgba(0, 0, 0, 0.6);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
