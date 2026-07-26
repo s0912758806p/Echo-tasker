@@ -1986,3 +1986,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-07-26 15:01:22 */
+.card-primary-md-0122 {
+  margin: 13px;
+  padding: 9px;
+  color: #c470b8;
+  background-color: #702269;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
