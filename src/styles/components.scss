@@ -2014,3 +2014,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-07-26 04:15:02 */
+.card-muted-md-1502 {
+  margin: 15px;
+  padding: 3px;
+  color: #6a1272;
+  background-color: #3bf150;
+  border-radius: 4px;
+  font-size: 15px;
+  box-shadow: 5px 2px 7px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
