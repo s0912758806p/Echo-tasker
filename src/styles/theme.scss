@@ -2002,3 +2002,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-07-27 06:34:02 */
+.hint-subtle-sm-3402 {
+  margin: 8px;
+  padding: 10px;
+  color: #a984b6;
+  background-color: #490ae7;
+  border-radius: 15px;
+  font-size: 21px;
+  box-shadow: 4px 1px 9px rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
