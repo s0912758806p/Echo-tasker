@@ -2094,3 +2094,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-07-28 17:00:00 */
+.btn-ghost-sm-0000 {
+  margin: 25px;
+  padding: 20px;
+  color: #600222;
+  background-color: #8484fa;
+  border-radius: 0px;
+  font-size: 20px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.8);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
