@@ -26,3 +26,4 @@
 - 2026-07-13: theme refresh
 - 2026-07-13: tokens adjustment
 - 2026-07-22: tokens adjustment
+- 2026-07-28: theme refresh
