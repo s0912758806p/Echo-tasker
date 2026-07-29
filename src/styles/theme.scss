@@ -2050,3 +2050,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-07-29 05:28:47 */
+.btn-subtle-md-2847 {
+  margin: 6px;
+  padding: 26px;
+  color: #072d0d;
+  background-color: #b65ff0;
+  border-radius: 19px;
+  font-size: 16px;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.4);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
