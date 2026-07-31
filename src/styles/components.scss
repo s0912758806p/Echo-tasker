@@ -2174,3 +2174,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-07-31 15:19:01 */
+.badge-primary-lg-1901 {
+  margin: 34px;
+  padding: 26px;
+  color: #4168f6;
+  background-color: #7703d9;
+  border-radius: 20px;
+  font-size: 21px;
+  box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
