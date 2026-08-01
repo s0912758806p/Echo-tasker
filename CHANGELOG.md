@@ -30,3 +30,4 @@
 - 2026-07-30: spacing refinements
 - 2026-07-30: utility class tweaks
 - 2026-07-31: spacing refinements
+- 2026-08-01: tokens adjustment
