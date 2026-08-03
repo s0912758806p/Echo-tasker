@@ -2226,3 +2226,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-08-03 17:33:22 */
+.hint-accent-lg-3322 {
+  margin: 22px;
+  padding: 7px;
+  color: #a50d45;
+  background-color: #ec4029;
+  border-radius: 15px;
+  font-size: 22px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.9);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
