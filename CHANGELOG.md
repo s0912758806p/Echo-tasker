@@ -33,3 +33,4 @@
 - 2026-08-01: tokens adjustment
 - 2026-08-02: minor style updates
 - 2026-08-03: theme refresh
+- 2026-08-04: tokens adjustment
