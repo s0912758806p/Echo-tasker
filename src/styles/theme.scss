@@ -2242,3 +2242,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-08-04 03:56:48 */
+.tile-subtle-lg-5648 {
+  margin: 42px;
+  padding: 13px;
+  color: #55b475;
+  background-color: #ee1e14;
+  border-radius: 14px;
+  font-size: 18px;
+  box-shadow: 5px 1px 6px rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
