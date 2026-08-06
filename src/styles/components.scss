@@ -2222,3 +2222,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-08-06 12:03:37 */
+.badge-subtle-lg-0337 {
+  margin: 17px;
+  padding: 13px;
+  color: #4737aa;
+  background-color: #e96474;
+  border-radius: 4px;
+  font-size: 17px;
+  box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.6);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
