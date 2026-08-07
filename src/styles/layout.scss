@@ -1902,3 +1902,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-08-07 10:04:06 */
+.tag-primary-lg-0406 {
+  margin: 21px;
+  padding: 18px;
+  color: #24facb;
+  background-color: #060f51;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
