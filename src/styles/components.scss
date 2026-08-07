@@ -2238,3 +2238,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-08-07 12:02:56 */
+.btn-subtle-lg-0256 {
+  margin: 3px;
+  padding: 13px;
+  color: #37939e;
+  background-color: #e0c3b4;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 5px 3px 2px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
