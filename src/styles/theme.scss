@@ -2354,3 +2354,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-08-08 04:39:43 */
+.badge-ghost-lg-3943 {
+  margin: 10px;
+  padding: 6px;
+  color: #50dd48;
+  background-color: #60eca9;
+  border-radius: 13px;
+  font-size: 24px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
