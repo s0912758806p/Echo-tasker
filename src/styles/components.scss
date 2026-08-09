@@ -2318,3 +2318,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-08-09 12:21:42 */
+.chip-secondary-sm-2142 {
+  margin: 49px;
+  padding: 26px;
+  color: #de61e9;
+  background-color: #43664e;
+  border-radius: 3px;
+  font-size: 22px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
