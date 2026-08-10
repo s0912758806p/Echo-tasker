@@ -2450,3 +2450,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-08-10 10:18:06 */
+.btn-subtle-md-1806 {
+  margin: 21px;
+  padding: 30px;
+  color: #66dbfb;
+  background-color: #9eff73;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.8);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
