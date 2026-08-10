@@ -2466,3 +2466,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-08-10 11:48:22 */
+.tile-primary-md-4822 {
+  margin: 33px;
+  padding: 13px;
+  color: #ccf471;
+  background-color: #09174b;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 5px 1px 1px rgba(0, 0, 0, 0.9);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
