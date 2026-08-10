@@ -2014,3 +2014,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-08-10 03:12:20 */
+.hint-primary-md-1220 {
+  margin: 11px;
+  padding: 30px;
+  color: #f8bcdd;
+  background-color: #279294;
+  border-radius: 20px;
+  font-size: 13px;
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.5);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
