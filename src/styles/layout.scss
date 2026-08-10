@@ -2030,3 +2030,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-08-10 16:32:50 */
+.btn-primary-md-3250 {
+  margin: 14px;
+  padding: 19px;
+  color: #19a1f3;
+  background-color: #4d9dab;
+  border-radius: 12px;
+  font-size: 15px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
