@@ -2366,3 +2366,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-08-10 15:54:58 */
+.card-subtle-sm-5458 {
+  margin: 14px;
+  padding: 16px;
+  color: #e7c6d5;
+  background-color: #f4cbbc;
+  border-radius: 12px;
+  font-size: 17px;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
