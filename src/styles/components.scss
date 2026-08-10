@@ -2334,3 +2334,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-08-10 05:55:10 */
+.hint-primary-md-5510 {
+  margin: 46px;
+  padding: 17px;
+  color: #532be0;
+  background-color: #456724;
+  border-radius: 19px;
+  font-size: 14px;
+  box-shadow: 4px 3px 2px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
