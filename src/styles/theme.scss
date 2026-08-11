@@ -2514,3 +2514,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-08-11 11:00:32 */
+.badge-secondary-sm-0032 {
+  margin: 20px;
+  padding: 27px;
+  color: #99d3e7;
+  background-color: #b05642;
+  border-radius: 16px;
+  font-size: 20px;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
