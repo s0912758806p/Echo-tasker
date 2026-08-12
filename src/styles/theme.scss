@@ -2546,3 +2546,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-08-12 05:55:42 */
+.tile-accent-md-5542 {
+  margin: 29px;
+  padding: 8px;
+  color: #aa84da;
+  background-color: #73ef16;
+  border-radius: 17px;
+  font-size: 16px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
