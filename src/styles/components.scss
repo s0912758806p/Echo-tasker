@@ -2382,3 +2382,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-08-13 08:34:42 */
+.hint-primary-lg-3442 {
+  margin: 24px;
+  padding: 7px;
+  color: #f7ae40;
+  background-color: #963f0c;
+  border-radius: 0px;
+  font-size: 24px;
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.3);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
