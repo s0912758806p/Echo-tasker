@@ -2414,3 +2414,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-08-14 04:37:40 */
+.card-secondary-lg-3740 {
+  margin: 19px;
+  padding: 1px;
+  color: #6f1a27;
+  background-color: #94d9fb;
+  border-radius: 1px;
+  font-size: 22px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
