@@ -2062,3 +2062,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-08-14 06:44:00 */
+.panel-muted-md-4400 {
+  margin: 0px;
+  padding: 20px;
+  color: #136cb1;
+  background-color: #c96488;
+  border-radius: 19px;
+  font-size: 15px;
+  box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.5);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
