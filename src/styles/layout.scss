@@ -2078,3 +2078,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-08-14 12:43:07 */
+.panel-muted-sm-4307 {
+  margin: 49px;
+  padding: 14px;
+  color: #219077;
+  background-color: #a39759;
+  border-radius: 17px;
+  font-size: 22px;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
