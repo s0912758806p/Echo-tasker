@@ -2126,3 +2126,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-08-15 11:38:19 */
+.badge-secondary-md-3819 {
+  margin: 8px;
+  padding: 19px;
+  color: #7033a3;
+  background-color: #84bac4;
+  border-radius: 6px;
+  font-size: 13px;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
