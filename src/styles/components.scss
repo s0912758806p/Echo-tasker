@@ -2446,3 +2446,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-08-16 03:33:39 */
+.tile-ghost-md-3339 {
+  margin: 21px;
+  padding: 27px;
+  color: #59be43;
+  background-color: #1191cf;
+  border-radius: 15px;
+  font-size: 15px;
+  box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.1);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
