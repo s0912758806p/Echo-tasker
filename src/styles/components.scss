@@ -2494,3 +2494,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-08-17 04:09:05 */
+.btn-primary-lg-0905 {
+  margin: 41px;
+  padding: 19px;
+  color: #bf037c;
+  background-color: #ee8b3c;
+  border-radius: 14px;
+  font-size: 24px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.9);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
