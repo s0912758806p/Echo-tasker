@@ -2510,3 +2510,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-08-17 14:48:57 */
+.card-ghost-md-4857 {
+  margin: 16px;
+  padding: 10px;
+  color: #fe9ca6;
+  background-color: #591785;
+  border-radius: 7px;
+  font-size: 12px;
+  box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.9);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
