@@ -2174,3 +2174,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-08-18 02:40:24 */
+.chip-primary-lg-4024 {
+  margin: 28px;
+  padding: 25px;
+  color: #8ec46f;
+  background-color: #b6cec3;
+  border-radius: 11px;
+  font-size: 24px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
