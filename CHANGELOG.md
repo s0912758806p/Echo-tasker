@@ -40,3 +40,4 @@
 - 2026-08-13: spacing refinements
 - 2026-08-13: theme refresh
 - 2026-08-16: tokens adjustment
+- 2026-08-18: theme refresh
