@@ -2834,3 +2834,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-08-19 14:16:53 */
+.tile-primary-lg-1653 {
+  margin: 50px;
+  padding: 9px;
+  color: #f9eda5;
+  background-color: #c5fe70;
+  border-radius: 7px;
+  font-size: 14px;
+  box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
