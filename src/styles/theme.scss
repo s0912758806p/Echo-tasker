@@ -2866,3 +2866,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-08-20 08:47:44 */
+.card-primary-lg-4744 {
+  margin: 45px;
+  padding: 11px;
+  color: #a79c61;
+  background-color: #36b097;
+  border-radius: 13px;
+  font-size: 17px;
+  box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.8);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
