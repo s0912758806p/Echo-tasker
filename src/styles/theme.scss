@@ -2946,3 +2946,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-08-21 16:45:19 */
+.tile-ghost-sm-4519 {
+  margin: 3px;
+  padding: 1px;
+  color: #100196;
+  background-color: #fa0cac;
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
