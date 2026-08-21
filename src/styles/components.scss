@@ -2638,3 +2638,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-08-21 15:46:47 */
+.badge-subtle-md-4647 {
+  margin: 22px;
+  padding: 9px;
+  color: #b71d6a;
+  background-color: #abdc7f;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.1);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
