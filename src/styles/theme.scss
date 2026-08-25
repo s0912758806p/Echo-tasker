@@ -3026,3 +3026,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-08-25 08:12:05 */
+.hint-muted-md-1205 {
+  margin: 17px;
+  padding: 1px;
+  color: #a305d1;
+  background-color: #c501d6;
+  border-radius: 18px;
+  font-size: 19px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
