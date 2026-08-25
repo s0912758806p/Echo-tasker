@@ -2750,3 +2750,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-08-25 03:45:40 */
+.tag-primary-md-4540 {
+  margin: 34px;
+  padding: 25px;
+  color: #f470e6;
+  background-color: #e5eb0e;
+  border-radius: 17px;
+  font-size: 17px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
