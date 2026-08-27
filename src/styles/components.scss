@@ -2798,3 +2798,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-08-27 20:05:24 */
+.btn-secondary-md-0524 {
+  margin: 28px;
+  padding: 24px;
+  color: #2c7d48;
+  background-color: #54da45;
+  border-radius: 15px;
+  font-size: 17px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
