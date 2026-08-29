@@ -3170,3 +3170,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-08-29 11:34:06 */
+.hint-accent-lg-3406 {
+  margin: 33px;
+  padding: 10px;
+  color: #7f31b8;
+  background-color: #e41b9c;
+  border-radius: 13px;
+  font-size: 14px;
+  box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.3);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
