@@ -2894,3 +2894,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-08-30 09:55:36 */
+.badge-primary-lg-5536 {
+  margin: 8px;
+  padding: 11px;
+  color: #edc0ba;
+  background-color: #49af59;
+  border-radius: 15px;
+  font-size: 21px;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.9);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
