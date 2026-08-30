@@ -43,3 +43,4 @@
 - 2026-08-18: theme refresh
 - 2026-08-25: utility class tweaks
 - 2026-08-28: tokens adjustment
+- 2026-08-30: spacing refinements
