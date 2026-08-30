@@ -2494,3 +2494,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-08-30 11:14:09 */
+.tile-secondary-md-1409 {
+  margin: 34px;
+  padding: 23px;
+  color: #7c964f;
+  background-color: #58dd2b;
+  border-radius: 7px;
+  font-size: 17px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.3);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
