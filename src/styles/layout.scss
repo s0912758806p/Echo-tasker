@@ -2542,3 +2542,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-08-31 19:30:29 */
+.tag-muted-sm-3029 {
+  margin: 41px;
+  padding: 18px;
+  color: #2977cc;
+  background-color: #f5487b;
+  border-radius: 5px;
+  font-size: 13px;
+  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
