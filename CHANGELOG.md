@@ -45,3 +45,4 @@
 - 2026-08-28: tokens adjustment
 - 2026-08-30: spacing refinements
 - 2026-08-31: minor style updates
+- 2026-08-31: utility class tweaks
