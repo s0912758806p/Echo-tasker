@@ -2558,3 +2558,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-08-31 20:21:32 */
+.btn-secondary-md-2132 {
+  margin: 14px;
+  padding: 29px;
+  color: #d1a2b9;
+  background-color: #9a1a2a;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
