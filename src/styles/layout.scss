@@ -2526,3 +2526,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-08-31 12:16:34 */
+.hint-subtle-lg-1634 {
+  margin: 46px;
+  padding: 15px;
+  color: #032c8e;
+  background-color: #a4a74d;
+  border-radius: 11px;
+  font-size: 17px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.9);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
