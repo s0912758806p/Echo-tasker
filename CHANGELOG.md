@@ -46,3 +46,4 @@
 - 2026-08-30: spacing refinements
 - 2026-08-31: minor style updates
 - 2026-08-31: utility class tweaks
+- 2026-09-01: utility class tweaks
