@@ -2574,3 +2574,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-09-01 15:45:22 */
+.hint-muted-lg-4522 {
+  margin: 26px;
+  padding: 3px;
+  color: #6082e1;
+  background-color: #a95b18;
+  border-radius: 12px;
+  font-size: 22px;
+  box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.9);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
