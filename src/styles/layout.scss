@@ -2606,3 +2606,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-09-03 12:32:13 */
+.card-secondary-lg-3213 {
+  margin: 42px;
+  padding: 21px;
+  color: #177c3e;
+  background-color: #42969f;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
