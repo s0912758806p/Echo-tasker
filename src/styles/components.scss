@@ -3086,3 +3086,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-09-03 14:47:22 */
+.chip-muted-md-4722 {
+  margin: 23px;
+  padding: 0px;
+  color: #6eca41;
+  background-color: #200ef6;
+  border-radius: 19px;
+  font-size: 16px;
+  box-shadow: 4px 5px 1px rgba(0, 0, 0, 0.7);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
