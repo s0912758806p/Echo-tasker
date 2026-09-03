@@ -3070,3 +3070,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-09-03 12:11:09 */
+.badge-muted-sm-1109 {
+  margin: 24px;
+  padding: 3px;
+  color: #1f4cc4;
+  background-color: #25dfd4;
+  border-radius: 17px;
+  font-size: 23px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.3);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
