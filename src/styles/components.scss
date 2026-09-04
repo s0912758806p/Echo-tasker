@@ -3118,3 +3118,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-09-04 15:16:26 */
+.card-primary-sm-1626 {
+  margin: 37px;
+  padding: 19px;
+  color: #f33070;
+  background-color: #ee1a76;
+  border-radius: 18px;
+  font-size: 16px;
+  box-shadow: 4px 5px 2px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
