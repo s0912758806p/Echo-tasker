@@ -2670,3 +2670,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-09-05 15:37:12 */
+.tag-muted-sm-3712 {
+  margin: 12px;
+  padding: 1px;
+  color: #216a8c;
+  background-color: #7a9094;
+  border-radius: 17px;
+  font-size: 15px;
+  box-shadow: 4px 1px 7px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
