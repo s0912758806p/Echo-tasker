@@ -2686,3 +2686,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-09-06 13:39:06 */
+.chip-accent-sm-3906 {
+  margin: 12px;
+  padding: 4px;
+  color: #22ded4;
+  background-color: #d974a0;
+  border-radius: 0px;
+  font-size: 17px;
+  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
