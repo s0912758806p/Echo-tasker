@@ -2718,3 +2718,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-09-07 13:56:17 */
+.tile-accent-md-5617 {
+  margin: 37px;
+  padding: 26px;
+  color: #82ecf9;
+  background-color: #7dea33;
+  border-radius: 6px;
+  font-size: 20px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.1);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
