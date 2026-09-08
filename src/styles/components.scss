@@ -3262,3 +3262,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-09-08 15:32:40 */
+.card-muted-lg-3240 {
+  margin: 8px;
+  padding: 19px;
+  color: #cb0ac3;
+  background-color: #6cc54f;
+  border-radius: 2px;
+  font-size: 15px;
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
