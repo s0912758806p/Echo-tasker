@@ -3410,3 +3410,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-09-08 12:09:00 */
+.tag-muted-md-0900 {
+  margin: 41px;
+  padding: 18px;
+  color: #eff252;
+  background-color: #08066e;
+  border-radius: 11px;
+  font-size: 21px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.9);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
