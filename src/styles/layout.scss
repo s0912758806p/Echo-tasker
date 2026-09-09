@@ -2766,3 +2766,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-09-09 12:16:05 */
+.badge-secondary-lg-1605 {
+  margin: 10px;
+  padding: 24px;
+  color: #6bd9fe;
+  background-color: #baeaaf;
+  border-radius: 2px;
+  font-size: 23px;
+  box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
