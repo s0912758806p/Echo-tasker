@@ -2782,3 +2782,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-09-09 14:10:19 */
+.tag-subtle-sm-1019 {
+  margin: 33px;
+  padding: 14px;
+  color: #28cb43;
+  background-color: #fe5656;
+  border-radius: 13px;
+  font-size: 21px;
+  box-shadow: 5px 2px 2px rgba(0, 0, 0, 0.6);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
