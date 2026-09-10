@@ -2830,3 +2830,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-09-10 17:20:23 */
+.hint-accent-md-2023 {
+  margin: 28px;
+  padding: 23px;
+  color: #b7548f;
+  background-color: #36fe76;
+  border-radius: 2px;
+  font-size: 23px;
+  box-shadow: 5px 2px 1px rgba(0, 0, 0, 0.5);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
