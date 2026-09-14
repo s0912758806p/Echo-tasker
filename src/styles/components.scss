@@ -3422,3 +3422,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-09-14 10:18:27 */
+.hint-ghost-lg-1827 {
+  margin: 7px;
+  padding: 3px;
+  color: #7ec68a;
+  background-color: #f39018;
+  border-radius: 11px;
+  font-size: 15px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
