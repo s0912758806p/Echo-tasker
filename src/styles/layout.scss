@@ -2974,3 +2974,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-09-15 13:35:30 */
+.tag-primary-md-3530 {
+  margin: 11px;
+  padding: 13px;
+  color: #2cc00c;
+  background-color: #a5603f;
+  border-radius: 11px;
+  font-size: 12px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.7);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
