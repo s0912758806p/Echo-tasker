@@ -49,3 +49,4 @@
 - 2026-09-01: utility class tweaks
 - 2026-09-04: theme refresh
 - 2026-09-06: minor style updates
+- 2026-09-15: utility class tweaks
