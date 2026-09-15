@@ -3438,3 +3438,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-09-15 14:38:57 */
+.hint-primary-sm-3857 {
+  margin: 42px;
+  padding: 0px;
+  color: #cb0935;
+  background-color: #4658f4;
+  border-radius: 3px;
+  font-size: 23px;
+  box-shadow: 5px 1px 8px rgba(0, 0, 0, 0.7);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
