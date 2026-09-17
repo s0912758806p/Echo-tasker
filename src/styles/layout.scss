@@ -3038,3 +3038,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-09-17 17:38:57 */
+.card-muted-md-3857 {
+  margin: 8px;
+  padding: 5px;
+  color: #95b12e;
+  background-color: #4e44f7;
+  border-radius: 17px;
+  font-size: 21px;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
