@@ -51,3 +51,4 @@
 - 2026-09-06: minor style updates
 - 2026-09-15: utility class tweaks
 - 2026-09-16: utility class tweaks
+- 2026-09-18: spacing refinements
