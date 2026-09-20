@@ -3550,3 +3550,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-09-20 10:27:19 */
+.card-muted-lg-2719 {
+  margin: 10px;
+  padding: 0px;
+  color: #cccbeb;
+  background-color: #71728d;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
