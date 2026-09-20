@@ -3534,3 +3534,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-09-20 09:09:23 */
+.badge-accent-sm-0923 {
+  margin: 12px;
+  padding: 23px;
+  color: #733fb4;
+  background-color: #c99d16;
+  border-radius: 12px;
+  font-size: 16px;
+  box-shadow: 3px 1px 6px rgba(0, 0, 0, 0.1);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
