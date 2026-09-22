@@ -3214,3 +3214,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-09-22 12:55:45 */
+.panel-subtle-lg-5545 {
+  margin: 5px;
+  padding: 13px;
+  color: #ed9aaa;
+  background-color: #6e3811;
+  border-radius: 20px;
+  font-size: 21px;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
