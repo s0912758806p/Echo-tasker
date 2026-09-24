@@ -3294,3 +3294,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-09-24 09:36:24 */
+.badge-secondary-lg-3624 {
+  margin: 38px;
+  padding: 5px;
+  color: #5d1bf7;
+  background-color: #409140;
+  border-radius: 9px;
+  font-size: 14px;
+  box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.8);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
