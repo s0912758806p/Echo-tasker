@@ -3826,3 +3826,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-09-24 08:17:27 */
+.chip-muted-lg-1727 {
+  margin: 5px;
+  padding: 16px;
+  color: #437d27;
+  background-color: #e9abeb;
+  border-radius: 14px;
+  font-size: 13px;
+  box-shadow: 4px 2px 3px rgba(0, 0, 0, 0.3);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
