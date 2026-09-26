@@ -3922,3 +3922,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-09-26 06:24:22 */
+.badge-primary-sm-2422 {
+  margin: 38px;
+  padding: 7px;
+  color: #af61e1;
+  background-color: #ced6ef;
+  border-radius: 12px;
+  font-size: 12px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
