@@ -3790,3 +3790,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-09-28 21:33:27 */
+.tile-secondary-lg-3327 {
+  margin: 10px;
+  padding: 30px;
+  color: #8a2001;
+  background-color: #57f8c7;
+  border-radius: 16px;
+  font-size: 12px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.8);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
