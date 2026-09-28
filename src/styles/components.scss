@@ -3774,3 +3774,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-09-28 20:48:03 */
+.card-subtle-lg-4803 {
+  margin: 35px;
+  padding: 27px;
+  color: #ab9edd;
+  background-color: #646be1;
+  border-radius: 2px;
+  font-size: 19px;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.6);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
