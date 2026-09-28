@@ -3758,3 +3758,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-09-28 20:37:34 */
+.panel-secondary-lg-3734 {
+  margin: 2px;
+  padding: 26px;
+  color: #5f1b58;
+  background-color: #d03eff;
+  border-radius: 7px;
+  font-size: 13px;
+  box-shadow: 2px 3px 9px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
