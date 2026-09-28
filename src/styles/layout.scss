@@ -3438,3 +3438,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-09-28 11:57:12 */
+.hint-subtle-lg-5712 {
+  margin: 25px;
+  padding: 25px;
+  color: #01d918;
+  background-color: #713c76;
+  border-radius: 14px;
+  font-size: 19px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
