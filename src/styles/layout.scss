@@ -3470,3 +3470,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-09-29 07:28:18 */
+.card-secondary-sm-2818 {
+  margin: 4px;
+  padding: 15px;
+  color: #09b075;
+  background-color: #a333ab;
+  border-radius: 15px;
+  font-size: 22px;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.8);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
