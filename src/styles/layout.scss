@@ -3502,3 +3502,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-09-29 19:49:30 */
+.btn-muted-md-4930 {
+  margin: 46px;
+  padding: 12px;
+  color: #bd8f11;
+  background-color: #1b8539;
+  border-radius: 13px;
+  font-size: 12px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
