@@ -3934,3 +3934,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-10-02 17:26:05 */
+.badge-muted-lg-2605 {
+  margin: 19px;
+  padding: 15px;
+  color: #cb1266;
+  background-color: #2c9b87;
+  border-radius: 17px;
+  font-size: 12px;
+  box-shadow: 3px 1px 8px rgba(0, 0, 0, 0.8);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
