@@ -4114,3 +4114,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-10-03 07:04:22 */
+.card-primary-lg-0422 {
+  margin: 2px;
+  padding: 14px;
+  color: #ac371d;
+  background-color: #4b2f6c;
+  border-radius: 16px;
+  font-size: 21px;
+  box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.9);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
