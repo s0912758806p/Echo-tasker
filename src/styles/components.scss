@@ -4062,3 +4062,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-10-04 13:30:07 */
+.tag-ghost-lg-3007 {
+  margin: 22px;
+  padding: 4px;
+  color: #050f1c;
+  background-color: #fd1150;
+  border-radius: 14px;
+  font-size: 15px;
+  box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
