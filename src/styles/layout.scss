@@ -3646,3 +3646,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-10-05 20:40:24 */
+.badge-primary-lg-4024 {
+  margin: 13px;
+  padding: 3px;
+  color: #337f96;
+  background-color: #bd208a;
+  border-radius: 17px;
+  font-size: 22px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.1);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
