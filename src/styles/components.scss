@@ -4110,3 +4110,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-10-07 10:47:44 */
+.btn-muted-lg-4744 {
+  margin: 37px;
+  padding: 6px;
+  color: #fda97a;
+  background-color: #0854f3;
+  border-radius: 16px;
+  font-size: 17px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.7);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
