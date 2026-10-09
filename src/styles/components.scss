@@ -4190,3 +4190,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-10-09 17:11:14 */
+.panel-primary-lg-1114 {
+  margin: 6px;
+  padding: 27px;
+  color: #425fb8;
+  background-color: #7441e3;
+  border-radius: 0px;
+  font-size: 13px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
