@@ -4206,3 +4206,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-10-09 17:39:06 */
+.card-muted-md-3906 {
+  margin: 31px;
+  padding: 13px;
+  color: #737b1e;
+  background-color: #48b1de;
+  border-radius: 16px;
+  font-size: 23px;
+  box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.4);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
