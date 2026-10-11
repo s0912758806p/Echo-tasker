@@ -3806,3 +3806,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-10-11 06:22:14 */
+.badge-muted-md-2214 {
+  margin: 46px;
+  padding: 26px;
+  color: #bad84e;
+  background-color: #08765e;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 4px 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
