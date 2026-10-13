@@ -4258,3 +4258,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-10-13 09:55:24 */
+.btn-secondary-sm-5524 {
+  margin: 14px;
+  padding: 12px;
+  color: #5391f6;
+  background-color: #569140;
+  border-radius: 18px;
+  font-size: 22px;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.4);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
