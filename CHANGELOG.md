@@ -57,3 +57,4 @@
 - 2026-09-30: utility class tweaks
 - 2026-10-10: theme refresh
 - 2026-10-10: minor style updates
+- 2026-10-13: tokens adjustment
