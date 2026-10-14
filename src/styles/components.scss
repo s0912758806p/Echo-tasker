@@ -4334,3 +4334,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-10-14 14:12:40 */
+.panel-secondary-lg-1240 {
+  margin: 35px;
+  padding: 13px;
+  color: #1d9253;
+  background-color: #35a964;
+  border-radius: 14px;
+  font-size: 13px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
