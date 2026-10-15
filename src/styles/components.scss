@@ -4350,3 +4350,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-10-15 11:50:17 */
+.badge-secondary-md-5017 {
+  margin: 44px;
+  padding: 18px;
+  color: #1674d2;
+  background-color: #7aaaed;
+  border-radius: 1px;
+  font-size: 16px;
+  box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.6);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
