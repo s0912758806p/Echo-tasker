@@ -4366,3 +4366,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-10-15 13:19:15 */
+.hint-muted-sm-1915 {
+  margin: 24px;
+  padding: 25px;
+  color: #5b5965;
+  background-color: #553e39;
+  border-radius: 7px;
+  font-size: 22px;
+  box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.8);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
