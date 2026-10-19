@@ -4430,3 +4430,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-10-19 20:19:02 */
+.tag-ghost-sm-1902 {
+  margin: 11px;
+  padding: 24px;
+  color: #683252;
+  background-color: #fcf5e1;
+  border-radius: 9px;
+  font-size: 14px;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.8);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
