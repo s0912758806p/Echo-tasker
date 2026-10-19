@@ -59,3 +59,4 @@
 - 2026-10-10: minor style updates
 - 2026-10-13: tokens adjustment
 - 2026-10-17: spacing refinements
+- 2026-10-19: utility class tweaks
