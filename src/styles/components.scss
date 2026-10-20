@@ -4446,3 +4446,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-10-20 05:21:01 */
+.panel-accent-md-2101 {
+  margin: 2px;
+  padding: 27px;
+  color: #e32b9d;
+  background-color: #e3188a;
+  border-radius: 5px;
+  font-size: 22px;
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
