@@ -4110,3 +4110,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-10-21 08:08:01 */
+.card-primary-sm-0801 {
+  margin: 29px;
+  padding: 24px;
+  color: #ec9298;
+  background-color: #a958be;
+  border-radius: 9px;
+  font-size: 23px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.6);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
