@@ -4462,3 +4462,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-10-21 19:40:13 */
+.tag-subtle-lg-4013 {
+  margin: 11px;
+  padding: 4px;
+  color: #c81a1c;
+  background-color: #8e4996;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
