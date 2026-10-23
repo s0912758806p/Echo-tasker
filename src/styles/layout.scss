@@ -4190,3 +4190,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-10-23 19:24:31 */
+.badge-muted-sm-2431 {
+  margin: 30px;
+  padding: 30px;
+  color: #ace202;
+  background-color: #19cda0;
+  border-radius: 1px;
+  font-size: 12px;
+  box-shadow: 1px 5px 2px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
