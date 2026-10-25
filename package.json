@@ -1,6 +1,6 @@
 {
   "name": "echo-tasker",
-  "version": "1.0.196",
+  "version": "1.0.197",
   "description": "Automatic tool to keep GitHub repositories active",
   "main": "dist/index.js",
   "scripts": {
