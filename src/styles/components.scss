@@ -4590,3 +4590,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-10-25 14:08:32 */
+.badge-ghost-sm-0832 {
+  margin: 4px;
+  padding: 1px;
+  color: #35a7da;
+  background-color: #ecc5e8;
+  border-radius: 17px;
+  font-size: 19px;
+  box-shadow: 1px 4px 7px rgba(0, 0, 0, 0.5);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
