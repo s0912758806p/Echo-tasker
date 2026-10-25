@@ -4562,3 +4562,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-10-25 09:30:37 */
+.tag-muted-lg-3037 {
+  margin: 9px;
+  padding: 21px;
+  color: #d50677;
+  background-color: #d13be6;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
