@@ -4638,3 +4638,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-10-26 20:58:21 */
+.tag-accent-md-5821 {
+  margin: 22px;
+  padding: 12px;
+  color: #16d91a;
+  background-color: #19415e;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
