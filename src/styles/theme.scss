@@ -4594,3 +4594,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-10-26 17:25:38 */
+.btn-secondary-sm-2538 {
+  margin: 2px;
+  padding: 26px;
+  color: #f48f57;
+  background-color: #28f4e7;
+  border-radius: 18px;
+  font-size: 20px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
