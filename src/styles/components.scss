@@ -4670,3 +4670,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-10-27 12:44:58 */
+.card-ghost-lg-4458 {
+  margin: 33px;
+  padding: 9px;
+  color: #a9e143;
+  background-color: #47caf6;
+  border-radius: 19px;
+  font-size: 18px;
+  box-shadow: 1px 4px 9px rgba(0, 0, 0, 0.5);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
