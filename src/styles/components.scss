@@ -4702,3 +4702,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-10-28 18:26:33 */
+.hint-accent-sm-2633 {
+  margin: 6px;
+  padding: 5px;
+  color: #3439a8;
+  background-color: #38fcea;
+  border-radius: 16px;
+  font-size: 13px;
+  box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.7);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
