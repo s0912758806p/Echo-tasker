@@ -4318,3 +4318,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-10-29 07:01:21 */
+.btn-muted-lg-0121 {
+  margin: 44px;
+  padding: 27px;
+  color: #69e73a;
+  background-color: #d9a325;
+  border-radius: 11px;
+  font-size: 23px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
