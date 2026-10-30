@@ -4430,3 +4430,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-10-30 20:09:15 */
+.tag-muted-lg-0915 {
+  margin: 21px;
+  padding: 12px;
+  color: #6228fc;
+  background-color: #93e8a4;
+  border-radius: 2px;
+  font-size: 15px;
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
