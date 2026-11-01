@@ -4754,3 +4754,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-11-01 13:54:25 */
+.tag-ghost-sm-5425 {
+  margin: 28px;
+  padding: 10px;
+  color: #69cc67;
+  background-color: #54cc48;
+  border-radius: 18px;
+  font-size: 22px;
+  box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.8);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
