@@ -4958,3 +4958,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-11-05 21:51:00 */
+.card-secondary-lg-5100 {
+  margin: 32px;
+  padding: 22px;
+  color: #e31f10;
+  background-color: #f4cf90;
+  border-radius: 1px;
+  font-size: 15px;
+  box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.3);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
