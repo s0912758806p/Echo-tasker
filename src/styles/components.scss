@@ -4894,3 +4894,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-11-05 11:38:52 */
+.btn-ghost-sm-3852 {
+  margin: 11px;
+  padding: 6px;
+  color: #536abc;
+  background-color: #1a57a2;
+  border-radius: 20px;
+  font-size: 18px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
