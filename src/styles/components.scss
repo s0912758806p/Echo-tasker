@@ -4926,3 +4926,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-11-05 20:22:01 */
+.badge-accent-lg-2201 {
+  margin: 4px;
+  padding: 7px;
+  color: #3b1171;
+  background-color: #bcdb6a;
+  border-radius: 6px;
+  font-size: 24px;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.9);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
