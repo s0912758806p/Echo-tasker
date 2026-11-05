@@ -4942,3 +4942,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-11-05 21:28:52 */
+.hint-muted-lg-2852 {
+  margin: 23px;
+  padding: 23px;
+  color: #61cc46;
+  background-color: #194817;
+  border-radius: 1px;
+  font-size: 13px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
