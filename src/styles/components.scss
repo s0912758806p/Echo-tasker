@@ -5054,3 +5054,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-11-09 14:06:26 */
+.badge-accent-md-0626 {
+  margin: 37px;
+  padding: 25px;
+  color: #ebf558;
+  background-color: #88e0da;
+  border-radius: 16px;
+  font-size: 20px;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
