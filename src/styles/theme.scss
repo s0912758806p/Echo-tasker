@@ -5106,3 +5106,19 @@
     transform: scale(1.07);
   }
 }
+
+/* 2026-11-10 18:36:50 */
+.tag-accent-sm-3650 {
+  margin: 48px;
+  padding: 1px;
+  color: #0cda03;
+  background-color: #1ab4ae;
+  border-radius: 1px;
+  font-size: 22px;
+  box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.3);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
