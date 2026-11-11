@@ -5170,3 +5170,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-11-11 20:19:48 */
+.chip-subtle-sm-1948 {
+  margin: 36px;
+  padding: 1px;
+  color: #e8a875;
+  background-color: #91962a;
+  border-radius: 2px;
+  font-size: 17px;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.9);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
