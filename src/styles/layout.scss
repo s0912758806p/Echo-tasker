@@ -4670,3 +4670,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-11-11 07:18:44 */
+.badge-secondary-lg-1844 {
+  margin: 44px;
+  padding: 16px;
+  color: #980ce3;
+  background-color: #c7be94;
+  border-radius: 12px;
+  font-size: 17px;
+  box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
