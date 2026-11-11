@@ -5122,3 +5122,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-11-11 08:42:38 */
+.badge-primary-lg-4238 {
+  margin: 40px;
+  padding: 23px;
+  color: #5f8842;
+  background-color: #7e02c3;
+  border-radius: 2px;
+  font-size: 23px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
