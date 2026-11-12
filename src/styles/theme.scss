@@ -5186,3 +5186,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-11-12 21:45:50 */
+.card-muted-sm-4550 {
+  margin: 13px;
+  padding: 5px;
+  color: #f88d78;
+  background-color: #1623b3;
+  border-radius: 18px;
+  font-size: 21px;
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.9);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
