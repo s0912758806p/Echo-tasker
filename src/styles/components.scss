@@ -5118,3 +5118,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-11-13 07:44:39 */
+.card-accent-lg-4439 {
+  margin: 8px;
+  padding: 3px;
+  color: #06aa02;
+  background-color: #f62a28;
+  border-radius: 15px;
+  font-size: 23px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.13);
+  }
+}
