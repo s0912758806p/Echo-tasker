@@ -5218,3 +5218,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-11-13 15:32:34 */
+.hint-ghost-md-3234 {
+  margin: 31px;
+  padding: 11px;
+  color: #570a10;
+  background-color: #ac13f8;
+  border-radius: 17px;
+  font-size: 18px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.9);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
