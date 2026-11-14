@@ -5182,3 +5182,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-11-14 16:02:17 */
+.badge-ghost-md-0217 {
+  margin: 34px;
+  padding: 1px;
+  color: #aa5925;
+  background-color: #134f5b;
+  border-radius: 19px;
+  font-size: 21px;
+  box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
