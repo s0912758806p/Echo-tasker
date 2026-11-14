@@ -5234,3 +5234,19 @@
     transform: scale(1.06);
   }
 }
+
+/* 2026-11-14 12:14:59 */
+.tile-secondary-lg-1459 {
+  margin: 6px;
+  padding: 29px;
+  color: #842592;
+  background-color: #e80aa8;
+  border-radius: 13px;
+  font-size: 14px;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
