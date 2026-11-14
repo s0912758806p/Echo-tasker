@@ -4718,3 +4718,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-11-14 19:29:01 */
+.hint-ghost-sm-2901 {
+  margin: 5px;
+  padding: 24px;
+  color: #13c3ab;
+  background-color: #1ad1f9;
+  border-radius: 9px;
+  font-size: 21px;
+  box-shadow: 5px 1px 4px rgba(0, 0, 0, 0.6);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
