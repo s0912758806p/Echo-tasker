@@ -5230,3 +5230,19 @@
     transform: scale(1.13);
   }
 }
+
+/* 2026-11-15 08:09:38 */
+.hint-subtle-lg-0938 {
+  margin: 19px;
+  padding: 2px;
+  color: #eefa9e;
+  background-color: #ea39d9;
+  border-radius: 11px;
+  font-size: 14px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  transition: all 800ms ease;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
