@@ -5294,3 +5294,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-11-16 21:51:00 */
+.tag-accent-md-5100 {
+  margin: 48px;
+  padding: 13px;
+  color: #5ec545;
+  background-color: #030688;
+  border-radius: 20px;
+  font-size: 15px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
