@@ -67,3 +67,4 @@
 - 2026-11-12: utility class tweaks
 - 2026-11-12: tokens adjustment
 - 2026-11-14: utility class tweaks
+- 2026-11-16: spacing refinements
