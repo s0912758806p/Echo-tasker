@@ -5406,3 +5406,19 @@
     transform: scale(1.15);
   }
 }
+
+/* 2026-11-18 21:36:03 */
+.card-subtle-sm-3603 {
+  margin: 28px;
+  padding: 26px;
+  color: #d3963e;
+  background-color: #225472;
+  border-radius: 20px;
+  font-size: 20px;
+  box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.5);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.06);
+  }
+}
