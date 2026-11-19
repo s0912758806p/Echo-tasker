@@ -5454,3 +5454,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-11-19 22:46:58 */
+.hint-muted-sm-4658 {
+  margin: 1px;
+  padding: 20px;
+  color: #c1b4d6;
+  background-color: #936fbf;
+  border-radius: 9px;
+  font-size: 14px;
+  box-shadow: 4px 3px 7px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
