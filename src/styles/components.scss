@@ -5470,3 +5470,19 @@
     transform: scale(1.11);
   }
 }
+
+/* 2026-11-20 14:07:16 */
+.panel-ghost-lg-0716 {
+  margin: 49px;
+  padding: 4px;
+  color: #8655ac;
+  background-color: #60623f;
+  border-radius: 20px;
+  font-size: 21px;
+  box-shadow: 3px 1px 9px rgba(0, 0, 0, 0.9);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
