@@ -5346,3 +5346,19 @@
     transform: scale(1.09);
   }
 }
+
+/* 2026-11-20 19:01:06 */
+.tile-muted-lg-0106 {
+  margin: 42px;
+  padding: 12px;
+  color: #20d48d;
+  background-color: #be5ca1;
+  border-radius: 17px;
+  font-size: 23px;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+
+  &:hover {
+    transform: scale(1.10);
+  }
+}
