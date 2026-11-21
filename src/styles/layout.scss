@@ -4894,3 +4894,19 @@
     transform: scale(1.08);
   }
 }
+
+/* 2026-11-21 17:01:53 */
+.chip-primary-lg-0153 {
+  margin: 20px;
+  padding: 30px;
+  color: #f56739;
+  background-color: #148ee4;
+  border-radius: 4px;
+  font-size: 12px;
+  box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.7);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
