@@ -5362,3 +5362,19 @@
     transform: scale(1.10);
   }
 }
+
+/* 2026-11-21 15:37:23 */
+.badge-secondary-md-3723 {
+  margin: 3px;
+  padding: 10px;
+  color: #652c44;
+  background-color: #caaa23;
+  border-radius: 4px;
+  font-size: 20px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.9);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.11);
+  }
+}
