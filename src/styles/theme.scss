@@ -5410,3 +5410,19 @@
     transform: scale(1.14);
   }
 }
+
+/* 2026-11-22 19:20:41 */
+.hint-secondary-lg-2041 {
+  margin: 10px;
+  padding: 30px;
+  color: #1b0e45;
+  background-color: #323a55;
+  border-radius: 13px;
+  font-size: 22px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
