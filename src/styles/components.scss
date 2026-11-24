@@ -5598,3 +5598,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-11-24 23:18:51 */
+.card-secondary-md-1851 {
+  margin: 43px;
+  padding: 27px;
+  color: #229632;
+  background-color: #d4e64b;
+  border-radius: 10px;
+  font-size: 24px;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.2);
+  transition: all 500ms ease;
+
+  &:hover {
+    transform: scale(1.09);
+  }
+}
