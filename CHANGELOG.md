@@ -71,3 +71,4 @@
 - 2026-11-18: theme refresh
 - 2026-11-19: spacing refinements
 - 2026-11-19: spacing refinements
+- 2026-11-25: utility class tweaks
