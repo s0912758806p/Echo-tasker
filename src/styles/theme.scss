@@ -5474,3 +5474,19 @@
     transform: scale(1.12);
   }
 }
+
+/* 2026-11-25 15:30:29 */
+.btn-subtle-sm-3029 {
+  margin: 24px;
+  padding: 5px;
+  color: #19ed92;
+  background-color: #adf340;
+  border-radius: 9px;
+  font-size: 22px;
+  box-shadow: 2px 1px 6px rgba(0, 0, 0, 0.5);
+  transition: all 700ms ease;
+
+  &:hover {
+    transform: scale(1.08);
+  }
+}
