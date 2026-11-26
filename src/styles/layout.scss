@@ -5070,3 +5070,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-11-26 22:02:44 */
+.hint-secondary-md-0244 {
+  margin: 21px;
+  padding: 10px;
+  color: #e7a81e;
+  background-color: #287c51;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 1px 5px 3px rgba(0, 0, 0, 0.6);
+  transition: all 400ms ease;
+
+  &:hover {
+    transform: scale(1.14);
+  }
+}
