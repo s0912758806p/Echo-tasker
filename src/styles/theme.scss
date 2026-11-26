@@ -5506,3 +5506,19 @@
     transform: scale(1.05);
   }
 }
+
+/* 2026-11-26 22:56:11 */
+.hint-accent-md-5611 {
+  margin: 10px;
+  padding: 20px;
+  color: #f1691d;
+  background-color: #a29ec9;
+  border-radius: 4px;
+  font-size: 24px;
+  box-shadow: 5px 4px 7px rgba(0, 0, 0, 0.8);
+  transition: all 600ms ease;
+
+  &:hover {
+    transform: scale(1.12);
+  }
+}
